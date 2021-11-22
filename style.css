@@ -1,0 +1,674 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* nav top css starts here */
+.navTop{
+    background-color: #4e4e4e;
+    height: 55px;
+}
+.navTopUL{
+    list-style: none;
+    width: 100vw;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: blueviolet;
+}
+.navTopIcon{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .navTop{
+        width: 100vw;
+    }
+    .navTopUL{
+        width: 100vw;
+        overflow: hidden;
+        font-size: 15px;
+    }
+    .navTopUL li{
+        margin-right: 7px;
+    }
+   
+  }
+/* nav top css ends here */
+
+/* hader part css  starts here*/
+.haderContiner{
+    background-color: #fcc700;
+    overflow-x: hidden;
+    width: 100vw;
+    color: #00376d;
+    padding-left: 70px;
+}
+.haderMainImage{
+    height: 475px;
+    margin-top: 25px;
+}
+.haderRight{
+    position: relative;
+}
+
+.round1{
+    height: 100px;
+    width: 100px;
+    color: white;
+    background-color: #00abe3;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 120px;
+    left: -10px;
+    padding: 20px;
+}
+.arrow1{
+    position: absolute;
+    top: 210px;
+    left: -100px;
+    height: 200px;
+}
+.hadetRightIcon{
+    height: 100px;
+}
+.round2{
+    height: 90px;
+    width: 90px;
+    color: #00376d;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    padding: 20px;
+}
+
+.arrow2{
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    width: 120px;
+}
+.haderImageText{
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    color: white;
+}
+.haderBtn{
+    width: 250px;
+    color: #00376d;
+    font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .haderContiner{
+        padding-top: 50px;
+    }
+    .haderContiner{
+        height: 540px;
+        overflow: hidden;
+    }
+    .haderMainImage{
+        height: 250px;
+    }
+    .haderBtn{
+        width: 250px;
+    }
+  }
+/* hader part css ends here*/
+
+/* why you are here section starts here */
+.whyHereConyainer{
+    color: #565656;
+    margin: 50px 0;
+    width: 100vw;
+}
+.whyHereTopText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.cards{
+    position: relative;
+}
+.arrowBlue1{
+    position: absolute;
+    top: -20px;
+    left: 250px;
+    width: 170px;
+    height: 170px;
+}
+.arrowBlue2{
+    position: absolute;
+    top: 20px;
+    right: 350px;
+    width: 170px;
+    height: 170px;
+}
+.card{
+    transition-duration: .5s;
+    cursor: pointer;
+}
+.card:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border: none;
+}
+.card:hover .whyHereIcon{
+    background-color: orange;
+}
+.whyHereIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+   font-size: 30px;
+   height: 50px;
+   width: 50px;
+   cursor: pointer;
+}
+.card1{
+    position: relative;
+}
+.orangebg{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .cards{
+        align-items: center;
+        margin-right: 50px;
+    }
+    .card{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .arrowBlue1{
+        display: none;
+    }
+    .card-3{
+        margin-left: 1.5rem;
+        margin-bottom: auto;
+    }
+  }
+/* why you are here section ends here */
+
+/* Best selling courses starts here */
+.BestCourserContainer{
+    color: #565656;
+    overflow-x: hidden;
+}
+.addToCart{
+    border: none;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+.addToCart:hover{
+    background-color: #00376d;
+    color: white;
+}
+.heart{
+    margin-left: 5px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+.coursesCards{
+    position: relative;
+}
+.leftIcon{
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    top: 27%;
+    left: -4%;
+    filter: drop-shadow(1px 4px 4px  #818080);
+    cursor: pointer;
+}
+.rightIcon{
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    top: 27% ;
+    right: -96%;
+    filter: drop-shadow(1px 4px 4px  #818080);
+    cursor: pointer;
+}
+.coursesCard{
+    cursor: pointer;
+    background-color: #fafafa;
+    padding: 10px;
+}
+.coursesCard:hover{
+    transition: .4s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.viewCourse{
+    border: none;
+    padding: 10px 25px;
+    color: gray;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .leftIcon{
+        display: none;
+    }
+    .rightIcon{
+        display: none;
+    }
+  }
+/* Best selling courses ends here */
+
+/* live online classes starts here */
+.onlineCourseContainer{
+    background-color: #f8f8f8;
+    height: 450px;
+    margin-top: 25px;
+    position: relative;
+}
+.liveOnlineImg{
+    width: 550px;
+    height: 450px;
+    position: absolute;
+    top: -15%;
+    right: 3%;
+}
+.allCards{
+    z-index: 1;
+    margin: 100px  130px 10px 130px;
+    padding: 0px 10px;
+    overflow-x: hidden;
+    position: absolute;
+}
+.leftCourseIcon{
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    top: 27%;
+    left: 0%;
+    filter: drop-shadow(1px 4px 4px  #818080);
+    cursor: pointer;
+}
+.rightCourseIcon{
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    top: 27% ;
+    right: -93%;
+    filter: drop-shadow(1px 4px 4px  #818080);
+    cursor: pointer;
+    cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .liveOnlineImg{
+        display: none;
+    }
+    .allCards{
+        margin: 50px  0px 10px 0px; 
+    }
+    .leftCourseIcon{
+        display: none;
+    }
+    .rightCourseIcon{
+        display: none;
+    }
+    
+  }
+/* live online classes ends here */
+
+/* BECOME AINSTRUCTOR  starts here*/
+.instructorContainer{
+    display: inline-block;
+    margin-top:400px;
+}
+.insBtn{
+    border: none;
+    background-color: orange;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .instructorContainer{
+        margin-top: 115rem;
+    }
+    .instructor-data{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+/* BECOME AINSTRUCTOR  ends here here*/
+
+/* upcoming Courses starts here */
+.upcomingContainer{
+    overflow: hidden;
+}
+.shareIcon{
+    font-size: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    filter: drop-shadow(1px 4px 4px  #818080b7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    visibility: hidden;
+    cursor: pointer;
+}
+.notifacationBtn{
+    border: none;
+    width: 100%;
+    padding: 5px 5px;
+    background-color: #4e4e4e;
+    color: white;
+    display: none;
+    visibility: hidden;
+    font-size: 15px;
+}
+.singleCard:hover{
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.singleCard:hover .shareIcon, .singleCard:hover .notifacationBtn {
+    visibility: visible;
+    display: inline-block;
+    transition: .5s;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .upcomingContainer{
+        width: 100vw;
+    }
+  }
+/* upcoming Courses ends here */
+
+/* focus on you starts here */
+.focusContainer{
+   background-color: #f3ebcb;
+}
+.focusCard{
+    border: 1px solid #e2e2e269;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.focusCard:hover{
+    transition-duration: .3s;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.focusIcon{
+    font-size: 45px;
+    background-color: orange;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+.focusIcon2{
+    font-size: 45px;
+    background-color: #22b060;
+    padding: 10px;
+    color: white;
+    border-radius: 5px; 
+}
+.focusIcon3{
+    font-size: 45px;
+    background-color: goldenrod;
+    padding: 10px;
+    color: white;
+    border-radius: 5px; 
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
+  }
+/* focus on you ends  here */
+
+/* growing fast starts here */
+.growingContainer{
+    background-image: url(/image/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+.growBtn{
+    border: none;
+    background-color: #22b060;
+    padding: 8px 50px;
+    border-radius: 5px;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .growingContainer{
+        height: 300px;
+    }
+  }
+/* growing fast ends here */
+
+/* world class learning starts here */
+.worldClassCard{
+    margin-right: 50px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+.worldClassCard:hover{
+    transition-duration: .5s;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border: none;
+    transform: scale(1.1, 1.1);
+}
+.worldClassIcon1{
+    font-size: 35px;
+    background-color: orange;
+    padding: 12px 8px;
+    color: white;
+    border-radius: 5px;
+}
+.worldClassIcon2{
+    font-size: 35px;
+    background-color: goldenrod;
+    padding: 12px;
+    color: white;
+    border-radius: 5px;
+}
+.worldClassIcon3{
+    font-size: 35px;
+    background-color: purple;
+    padding: 12px;
+    color: white;
+    border-radius: 5px;
+}
+.worldClassIcon4{
+    font-size: 35px;
+    background-color: rgb(49, 49, 190);
+    padding: 12px;
+    color: white;
+    border-radius: 5px;
+}
+.worldClassIcon5{
+    font-size: 35px;
+    background-color: green;
+    padding: 12px;
+    color: white;
+    border-radius: 5px;
+}
+.worldClassIcon6{
+    font-size: 35px;
+    background-color: skyblue;
+    padding: 12px;
+    color: white;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .worldClassCard{
+        margin: 0;
+        padding: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+  }
+/* world class learning ends here */
+
+/* Explore css starts here */
+.exploreContainer{
+    background-color: #f29a49;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .exploreVideo{
+        width: 300px;
+        height: 240px;
+    }
+    .exploreData{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+/* success css part starts here */
+.successContainer{
+    background-image: url(/image//cover2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.inspiredIcon{
+    color: white;
+    font-size: 35px;
+    filter: drop-shadow(1px 4px 4px  #29282869);
+    cursor: pointer;
+}
+.btns{
+ margin-left: 255px;
+}
+/* subscriber css */
+.subscriberContainer{
+    background-image: url(/image/cover3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.subscribeInput{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    border-radius: 0%;
+}
+.subscribeInput::placeholder{
+    color: white;
+}
+.subscribeInput:focus{
+    outline: none !important;
+    background-color: transparent;
+}
+
+/* start Learning */
+.learningContainer{
+    background-image: url(/image/cover4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* footer starts here*/
+.focusContainer{
+    background-color: #f8f8f8;
+    
+}
+.footerLink{
+    color: #818181;
+}
+.facebookicon{
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.linkedinicon{
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: rgb(59, 59, 211);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.tweetericon{
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: cyan;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.footerBottom{
+    background-color: #e1e1e1;
+    width: 100vw;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .footerData{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    .footerBottom{
+        margin-bottom: 13rem;
+    }
+    
+  }
+
+/* footer starts here*/
